@@ -87,7 +87,7 @@ footer {
 .productPage {
   margin-top: 50px;
   margin-bottom: -25px;
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }

@@ -6,6 +6,9 @@ import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Helmet } from 'react-helmet-async';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
+import { getError } from '../utils';
 
 const reducer = (state, action)  => {
     switch(action.type) {
@@ -36,16 +39,18 @@ export default function Product() {
                 const result = await axios.get(`/api/products/slug/${slug}`) 
                 dispatch({type: 'FETCH_SUCCESS', playload: result.data})
             } catch (err) {
-                dispatch({type: 'FETCH_FAIL', playload: err.message})
+                dispatch({type: 'FETCH_FAIL', playload: getError(err)})
             }
         }
         fetchData()
     }, [slug])
 
     return (
-       loading ? <div>Loading</div>
-       : error ? <div>{error}</div>
-       :
+        loading ? (
+            <LoadingBox />
+       ) : error ? ( 
+        <MessageBox  variant="danger">{error}</MessageBox> 
+       ) :
         <div>
             <Row className='productPage'>
                 <Col md={6}>
