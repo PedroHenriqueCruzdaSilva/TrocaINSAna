@@ -27,6 +27,8 @@ main {
 .products {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .product {
@@ -41,5 +43,5 @@ main {
 
 .product-info {
   padding: 1rem;
-  max-width: 250px;
+  max-width: 300px;
 }
