@@ -39,7 +39,7 @@ export default function Home() {
     }, [])
     return (
         <>
-          <h1>Em destaque</h1>
+          <h1 className='H1h'>Em destaque</h1>
             <div className="products">
                 {
                 loading ? (
