@@ -2,7 +2,7 @@ import { useEffect, useReducer, /* useState */ } from 'react';
 // import data from '../data';
 import axios from "axios";
 // import { Link } from 'react-router-dom';
-import Product from './Product';
+import Product from '../components/Product';
 import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -50,14 +50,13 @@ export default function Home() {
                ) : error ? ( 
                 <div> {error} </div> 
                ) : (
-                <Row>
-                    {
-                    products.map((product) => (
-                        <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
-                            <Product product={product}></Product>
-                        </Col>
-                    ))}
-                </Row>
+                <Row className='rowc'>
+                {products.map((product) => (
+                  <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+                    <Product product={product} />
+                  </Col>
+                ))}
+              </Row>
                 ) }
             </div>
           </>

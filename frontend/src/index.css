@@ -45,6 +45,22 @@ h1 {
   justify-content: center;
 }
 
+.rowc {
+  width: 100.5%;
+}
+
+.nameL {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.nameL:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
 .product {
   border: 1px #404040 solid;
   margin: 1rem;
@@ -59,3 +75,4 @@ h1 {
   padding: 1rem;
   max-width: 300px;
 }
+
