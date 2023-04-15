@@ -12,7 +12,7 @@ export default function Product(props) {
                 <Link className="nameL" to={`/product/${product.slug}`}>
                     <Card.Title>{product.name}</Card.Title>
                 </Link>
-                <Card.Text>{product.description}</Card.Text>
+                <Card.Text>{product.descriptionp}</Card.Text>
                 <Card.Text>E-mail para troca abaixo:</Card.Text>
                 <strong>{product.email}</strong>
             </Card.Body>

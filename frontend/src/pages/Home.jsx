@@ -6,6 +6,7 @@ import Product from '../components/Product';
 import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action)  => {
     switch(action.type) {
@@ -42,11 +43,14 @@ export default function Home() {
     }, [])
     return (
         <>
+            <Helmet>
+                <title>Troca INSAna</title>
+            </Helmet>
           <h1 className='H1h'>Em destaque</h1>
             <div className="products">
                 {
                 loading ? (
-                    <div> Loading. </div>
+                    <div> Loading </div>
                ) : error ? ( 
                 <div> {error} </div> 
                ) : (

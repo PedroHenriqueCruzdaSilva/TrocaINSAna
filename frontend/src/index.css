@@ -76,3 +76,18 @@ h1 {
   max-width: 300px;
 }
 
+footer {
+  margin-bottom: 10px;
+}
+
+.img-large {
+  max-width: 100%;
+}
+
+.productPage {
+  margin-top: 50px;
+  margin-bottom: -25px;
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+}

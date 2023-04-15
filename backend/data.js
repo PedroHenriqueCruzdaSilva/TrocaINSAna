@@ -6,7 +6,8 @@ const data = {
             category: 'Camisas',
             image: '/images/1.png',
             email: 'example@gmail.com',
-            description: 'Uma camisa azul muito bonita',
+            descriptionp: 'Uma camisa azul muito bonita',
+            descriptiond: 'uma camisa',
         },
         {
             name: 'Calça Jeans Azul',
@@ -14,7 +15,8 @@ const data = {
             category: 'Calças',
             image: '/images/2.png',
             email: 'example2@gmail.com',
-            description: 'Uma calça jeans azul muito bonita',
+            descriptionp: 'Uma calça jeans azul muito bonita',
+            descriptiond: 'Uma çalça',
         },
         {
             name: 'Camisa',
@@ -22,7 +24,8 @@ const data = {
             category: 'Camisas',
             image: '/images/1.png',
             email: 'example@gmail.com',
-            description: 'Uma camisa azul muito bonita',
+            descriptionp: 'Uma camisa azul muito bonita',
+            descriptiond: 'uma camisa',
         },
         {
             name: 'Calça',
@@ -30,7 +33,8 @@ const data = {
             category: 'Calças',
             image: '/images/2.png',
             email: 'example2@gmail.com',
-            description: 'Uma calça jeans azul muito bonita',
+            descriptionp: 'Uma calça jeans azul muito bonita',
+            descriptiond: 'Uma çalça',
         },
     ],
 }
