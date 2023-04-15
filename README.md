@@ -1,1 +1,1 @@
-Sitezin de compras tranquilo
+Sitezin de Trocas tranquilo
