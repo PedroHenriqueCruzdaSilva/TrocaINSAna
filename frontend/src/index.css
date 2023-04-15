@@ -91,3 +91,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+
+.small-container {
+  max-width: 600px;
+}
